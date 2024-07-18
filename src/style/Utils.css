@@ -1,0 +1,31 @@
+.colpal-container {
+    gap: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.color-card {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.small-icon {
+    font-size: inherit;
+    padding-right: 2px;
+}
+
+.tip {
+    color: var(--clr-muted);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tip > span {
+    font-size: 16px;
+}

@@ -84,7 +84,7 @@ export default function Card({ itemsArray, data, isSkills }) {
                                         {data.url.map((link, id) => {
                                             return (
                                                 <li key={`modal-link-${id}`}>
-                                                    <a href={link}>{link}</a>
+                                                    <a href={link} target="_blank">{link}</a>
                                                 </li>
                                             )
                                         })}

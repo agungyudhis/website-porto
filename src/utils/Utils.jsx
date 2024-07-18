@@ -1,12 +1,7 @@
-function enableDarkMode() {
-    document.body.classList.add("darkmode")
-    localStorage.setItem("darkMode", true)
-}
-
-function disableDarkMode() {
-    document.body.classList.add("darkmode")
-    localStorage.setItem("darkMode", true)
-}
+import "../style/Utils.css"
+import { colPal } from "../data/Data"
+import { useContext } from "react"
+import { ThemeContext } from "../context/Contexts"
 
 function ColPal() {
     return (
@@ -24,4 +19,30 @@ function ColPal() {
     )
 }
 
-export { enableDarkMode, disableDarkMode, ColPal }
+function ColorCard({ color, textColor }) {
+    const spanStyle = {
+        backgroundColor: color,
+        color: textColor,
+    }
+    return (
+        <span className="color-card" style={spanStyle}>
+            {color}
+        </span>
+    )
+}
+
+const ThemeToggle = () => {
+    const { isDark, setIsDark } = useContext(ThemeContext)
+
+    return (
+        <span
+            className="material-symbols-outlined"
+            onClick={() => setIsDark(!isDark)}
+            checked={isDark}
+        >
+            {isDark ? "light_mode" : "dark_mode"}
+        </span>
+    )
+}
+
+export { ColPal, ThemeToggle }

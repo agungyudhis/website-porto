@@ -1,13 +1,8 @@
-
 #root {
-    /* display: inline-block; */
     justify-content: center;
 }
 
 .main-container {
-    /* max-width: 1280px; */
-    /* margin: 0 auto; */
-    /* padding: 2rem; */
     flex-direction: column;
     align-items: center;
     align-content: center;
@@ -45,7 +40,6 @@
 }
 
 .intro-container {
-    /* background-color: #2c2c2c; */
     height: auto;
     width: var(--content-width);
     padding: 5vh 0;
@@ -60,7 +54,8 @@
     font-size: x-large;
 }
 
-.card-container, .contact-container {
+.card-container,
+.contact-container {
     margin: 0;
     width: var(--content-width);
 }
@@ -74,7 +69,8 @@
     margin-bottom: 50px;
 }
 
-.card, .contact-card {
+.card,
+.contact-card {
     font-size: 1rem;
     color: black;
     background-color: rgb(238, 238, 238);
@@ -95,7 +91,8 @@
     align-items: center;
 }
 
-.card:hover, .contact-card:hover {
+.card:hover,
+.contact-card:hover {
     background-color: rgb(255, 255, 255);
     z-index: 1;
     box-shadow: var(--box-shadow-wide);
@@ -145,25 +142,6 @@
     opacity: 1;
 }
 
-.colpal-container {
-    /* height: 10vh; */
-    /* width: 100em; */
-    /* width: 50%; */
-    gap: 10px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.color-card {
-    /* height: 10px;
-    width: 10px; */
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 15px;
-}
 
 .title-container {
     display: flex;
@@ -176,7 +154,8 @@
     width: var(--content-width);
 }
 
-.skill-filter, .skill-filter-options {
+.skill-filter,
+.skill-filter-options {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -188,7 +167,7 @@
 }
 
 .sidebar {
-    float: left; 
+    float: left;
     width: 46px;
     background-color: var(--clr-primary);
     border-radius: 8px;
@@ -224,19 +203,14 @@
     padding: 20px 0;
     gap: 20px;
     grid-template-columns: 3fr 1fr;
-    /* justify-content: space-between; */
 }
 
-.echarts-for-react  {
+.echarts-for-react {
     background-color: var(--clr-light);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
 }
 
-.small-icon {
-    font-size: inherit;
-    padding-right: 2px;
-}
 
 .container-header {
     padding: 0;
@@ -290,16 +264,4 @@
     background-color: var(--clr-accent);
     transform: translateX(80%);
     transition: inherit;
-}
-
-.tip {
-    color: var(--clr-muted);
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.tip > span {
-    font-size: 16px;
 }
