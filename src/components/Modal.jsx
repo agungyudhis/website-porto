@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import "../style/Modal.css"
-
+// TODO: Restructure link data
+// TODO: Add name for link
+// TODO: Use tags for skills and tools section
 function Tags({ data }) {
     const spanStyle = {
         color: data.textColor,
@@ -23,6 +25,8 @@ export default function Card({ itemsArray, data, isSkills }) {
     const [modal, setModal] = useState(false)
     const toggleModal = () => {
         setModal(!modal)
+        document.body.style.overflow = modal ? 'visible' : 'hidden'
+
     }
     return (
         <>
@@ -47,16 +51,18 @@ export default function Card({ itemsArray, data, isSkills }) {
                     <div className="modal">
                         <div className="overlay" onClick={toggleModal}></div>
                         <div className="modal-content">
-                            <div className="modal-img">
-                                {data.images.map((image, id) => {
-                                    return (
-                                        <img
-                                            key={`modal-img-${id}`}
-                                            src={`/public/img/${image}`}
-                                        />
-                                    )
-                                })}
-                            </div>
+                            {data?.images && data?.images.length != 0 && 
+                                <div className="modal-img">
+                                    {data.images.map((image, id) => {
+                                        return (
+                                            <img
+                                                key={`modal-img-${id}`}
+                                                src={`/public/img/${image}`}
+                                            />
+                                        )
+                                    })}
+                                </div>
+                            }
                             <div className="modal-description">
                                 <h3>{data.name}</h3>
                                 <p>{data.description}</p>
@@ -78,13 +84,13 @@ export default function Card({ itemsArray, data, isSkills }) {
                                         {data.project_at.join(", ")}
                                     </div>
                                 )}
-                                {data?.url && (
+                                {data?.external_link && (
                                     <div className="project-links">
-                                        <h4>Link:</h4>
-                                        {data.url.map((link, id) => {
+                                        <h4>External Link:</h4>
+                                        {data.external_link.map((link, id) => {
                                             return (
-                                                <li key={`modal-link-${id}`}>
-                                                    <a href={link} target="_blank">{link}</a>
+                                                <li key={`modal-link-${id}`} className="url-list">
+                                                    <a href={link.url} target="_blank" >{link.name}</a>
                                                 </li>
                                             )
                                         })}

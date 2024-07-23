@@ -12,13 +12,7 @@
         {
             "name": "Data Pipeline",
             "description": "Communicate with Funnelink's clients' data teams for data understanding. Build data ETL from various data source (spreadsheets, MySQL, Google Analytics). I use MySQL for data warehouse",
-            "tools": [
-                "MySQL",
-                "Python",
-                "Google API",
-                "Spreadsheets",
-                "Cron"
-            ],
+            "tools": ["MySQL", "Python", "Google API", "Spreadsheets", "Cron"],
             "skills": [
                 "Data Pipeline",
                 "Database",
@@ -46,11 +40,14 @@
         },
         {
             "name": "Looker Studio Dashboards",
-            "description": "Designed and implemented Looker Studio interactive dashboard using Google Sheets as data source",
+            "description": "Designed and implemented Looker Studio interactive dashboard using Google Sheets as data source.",
             "tools": ["Google Looker Studio", "Google Sheets"],
             "skills": ["Data Visualization", "Creative Thinking"],
             "project_at": ["Funnelink", "VOCASIA"],
-            "images": ["looker-dashboards-1.png", "looker-dashboards-2.png"]
+            "images": [
+                "looker-dashboards-1.png", 
+                "looker-dashboards-2.png"
+            ]
         },
         {
             "name": "Grafana Dashboards",
@@ -128,10 +125,19 @@
             "skills": ["Data Visualization", "Creative Thinking"],
             "project_at": ["Personal Project"],
             "images": [],
-            "url": [
-                "https://public.tableau.com/app/profile/agungyudhis/viz/StatistikKetenagalistrikanIndonesiaTahun2022/StatistikKetenagalistrikanTahun2022",
-                "https://gatrik.esdm.go.id/frontend/download_index/?kode_category=statistik",
-                "https://openinframap.org/stats/area/Indonesia/plants"
+            "external_link": [
+                {
+                    "url": "https://public.tableau.com/app/profile/agungyudhis/viz/StatistikKetenagalistrikanIndonesiaTahun2022/StatistikKetenagalistrikanTahun2022",
+                    "name": "Public Tableau Profile"
+                },
+                {
+                    "url":"https://gatrik.esdm.go.id/frontend/download_index/?kode_category=statistik",
+                    "name":"Data Source 1: Gatrik ESDM"
+                },
+                {
+                    "url":"https://openinframap.org/stats/area/Indonesia/plants",
+                    "name":"Data Source 2: Open Infrastructure Map Indonesia Power Plants"
+                }
             ]
         },
         {
@@ -173,7 +179,7 @@
         },
         {
             "name": "Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019",
-            "description": "...",
+            "description": "Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019",
             "tools": ["QGIS", "R"],
             "skills": ["Programming", "Analytics", "Spatial Analytics"],
             "project_at": ["Academic"],

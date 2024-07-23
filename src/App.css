@@ -72,16 +72,16 @@
 .card,
 .contact-card {
     font-size: 1rem;
-    color: black;
-    background-color: rgb(238, 238, 238);
+    color: var(--clr-fg);
+    background-color: var(--clr-card);
     border-radius: var(--card-border-radius);
     padding: 1em;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
-    transition: 0.2s;
     cursor: pointer;
     box-shadow: var(--box-shadow);
+    transition: all var(--transition-duration);
 }
 
 .contact-card {
@@ -96,6 +96,7 @@
     background-color: rgb(255, 255, 255);
     z-index: 1;
     box-shadow: var(--box-shadow-wide);
+    transition: all var(--transition-duration);
 }
 
 .card > h3 {
@@ -179,13 +180,12 @@
     text-align: center;
     padding: 20px 0;
     gap: 20px;
-    transition: inherit;
 }
 
 .sidebar-icon {
     z-index: 3;
     color: var(--clr-bg);
-    transition: inherit;
+    transition: color var(--transition-duration);
 }
 
 .material-symbols-outlined {
@@ -206,9 +206,10 @@
 }
 
 .echarts-for-react {
-    background-color: var(--clr-light);
+    background-color: var(--clr-card);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
+    transition: background-color var(--transition-duration);
 }
 
 
@@ -255,7 +256,6 @@
     width: 60%;
     background-color: var(--clr-accent);
     transform: translateX(80%);
-    transition: inherit;
 }
 
 .div-box-checked {
@@ -263,5 +263,4 @@
     width: 60%;
     background-color: var(--clr-accent);
     transform: translateX(80%);
-    transition: inherit;
 }
