@@ -44,7 +44,7 @@ function OptionTags({ filterHandler, name }) {
     )
 }
 
-export default function Skills() {
+export default function Skills({ refProp }) {
     const { itemsArray, setItemsArray, isSkills, setIsSkills, mainData } =
         useContext(DataContext)
 
@@ -79,7 +79,7 @@ export default function Skills() {
 
     return (
         <>
-            <div className="skill-container">
+            <div className="skill-container" ref={refProp}>
                 <div className="container-header">
                     <div className="category">
                         <div className="category-button">

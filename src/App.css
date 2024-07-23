@@ -42,7 +42,8 @@
 .intro-container {
     height: auto;
     width: var(--content-width);
-    padding: 5vh 0;
+    padding: 50px 0;
+    padding-bottom: 0px;
     margin: 0;
 }
 
@@ -52,6 +53,10 @@
 
 .intro-container > p {
     font-size: x-large;
+}
+
+.contacts {
+    height: 100vh;
 }
 
 .card-container,
@@ -122,6 +127,7 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     text-align: center;
+    justify-content: center;
     cursor: pointer;
 }
 
@@ -143,7 +149,6 @@
     opacity: 1;
 }
 
-
 .title-container {
     display: flex;
     flex-direction: row;
@@ -153,6 +158,7 @@
 
 .skill-container {
     width: var(--content-width);
+    padding-top: 50px;
 }
 
 .skill-filter,
@@ -167,19 +173,30 @@
     padding-bottom: 12px;
 }
 
-.sidebar {
-    float: left;
-    width: 46px;
-    background-color: var(--clr-primary);
-    border-radius: 8px;
+.sidebar-container {
     position: sticky;
     display: flex;
+    float: left;
+    width: 46px;
     flex-direction: column;
     top: 10px;
     left: 10px;
+    gap: 20px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-primary);
+    border-radius: 8px;
     text-align: center;
     padding: 20px 0;
     gap: 20px;
+}
+
+.sidebar:last-child {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .sidebar-icon {
@@ -211,7 +228,6 @@
     box-shadow: var(--box-shadow);
     transition: background-color var(--transition-duration);
 }
-
 
 .container-header {
     padding: 0;

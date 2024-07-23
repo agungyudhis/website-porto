@@ -5,11 +5,11 @@ import { DataContext } from "../context/Contexts"
 
 const MASONRY_BREAKPOINTS = { 350: 2, 500: 3, 1100: 4 }
 
-export default function Projects() {
+export default function Projects({ refProp }) {
     const { itemsArray, isSkills, mainData } = useContext(DataContext)
     return (
         <>
-            <div className="card-container">
+            <div className="card-container" ref={refProp}>
                 <h2>Works & Projects</h2>
                 <h3>Bla-bla</h3>
                 <ResponsiveMasonry

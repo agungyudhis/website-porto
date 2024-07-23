@@ -1,8 +1,8 @@
 import { profileData } from "../data/Data"
 
-export default function Contacts() {
+export default function Contacts({ refProp }) {
     return (
-        <div className="contacts">
+        <div className="contacts" ref={refProp}>
             <h2>Contacts</h2>
             <div className="contact-container">
                 <a className="contact-card" style={{ cursor: "auto" }}>

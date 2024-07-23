@@ -7,20 +7,31 @@ import Intro from "./components/Intro.jsx"
 import Skills from "./components/Skills.jsx"
 import Projects from "./components/Projects.jsx"
 import Contacts from "./components/Contacts.jsx"
+import { useRef } from "react"
 
 function App() {
     const { isDark } = useContext(ThemeContext)
 
+    const profile = useRef(null)
+    const skill = useRef(null)
+    const project = useRef(null)
+    const contact = useRef(null)
+
     return (
         <div className="App" data-theme={isDark ? "dark" : "light"}>
-            <Sidebar></Sidebar>
+            <Sidebar
+                profile={profile}
+                skill={skill}
+                project={project}
+                contact={contact}
+            ></Sidebar>
             <div className="main-container">
                 <DataProvider>
                     {/* <ColPal></ColPal> */}
-                    <Intro></Intro>
-                    <Skills></Skills>
-                    <Projects></Projects>
-                    <Contacts></Contacts>
+                    <Intro refProp={profile}></Intro>
+                    <Skills refProp={skill}></Skills>
+                    <Projects refProp={project}></Projects>
+                    <Contacts refProp={contact}></Contacts>
                 </DataProvider>
             </div>
         </div>
