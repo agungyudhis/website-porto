@@ -34,6 +34,13 @@ function DataProvider({ children }) {
 function ThemeProvider({ children }) {
     const preference = window.matchMedia("(prefers-color-scheme: dark)").matches
     const [isDark, setIsDark] = useLocalStorage("isDark", preference)
+    if (isDark) {
+        document.body.classList.remove('light')
+        document.body.classList.add('dark')
+    } else {
+        document.body.classList.remove('dark')
+        document.body.classList.add('light')
+    }
     const value = { isDark, setIsDark }
     return (
         <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>

@@ -37,7 +37,16 @@ const ThemeToggle = () => {
     return (
         <span
             className="material-symbols-outlined"
-            onClick={() => setIsDark(!isDark)}
+            onClick={() => {
+                setIsDark(!isDark)
+                if (isDark) {
+                    document.body.classList.remove("dark")
+                    document.body.classList.add("light")
+                } else {
+                    document.body.classList.remove("light")
+                    document.body.classList.add("dark")
+                }
+            }}
             checked={isDark}
         >
             {isDark ? "light_mode" : "dark_mode"}
