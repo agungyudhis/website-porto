@@ -7,7 +7,7 @@ import { extractData } from "../data/Data.jsx"
 const Category = ({ handleChange, isChecked, category }) => {
     return (
         <button onClick={handleChange} checked={isChecked}>
-            <h2>{category}</h2>
+            <h1>{category}</h1>
         </button>
     )
 }
@@ -80,105 +80,113 @@ export default function Skills({ refProp }) {
     return (
         <>
             <div className="skill-container" ref={refProp}>
-                <div className="container-header">
-                    <div className="category">
-                        <div className="category-button">
-                            <Category
-                                category={"Skills"}
-                                checked={isSkills}
-                                handleChange={() => {
-                                    setIsSkills(true)
-                                    setItemsArray(extractData(mainData, true))
-                                }}
-                            ></Category>
-                            <div
-                                className={`div-box${
-                                    isSkills ? "-checked" : ""
-                                }`}
-                            ></div>
+                <div className="skill-wrapper">
+                    <div className="skill-title">
+                        <div className="category">
+                            <div className="category-button">
+                                <Category
+                                    category={"Skills"}
+                                    checked={isSkills}
+                                    handleChange={() => {
+                                        setIsSkills(true)
+                                        setItemsArray(
+                                            extractData(mainData, true)
+                                        )
+                                    }}
+                                ></Category>
+                                <div
+                                    className={`div-box${
+                                        isSkills ? "-checked" : ""
+                                    }`}
+                                ></div>
+                            </div>
+                            <h1>&</h1>
+                            <div className="category-button">
+                                <Category
+                                    category={"Tools"}
+                                    checked={isSkills}
+                                    handleChange={() => {
+                                        setIsSkills(false)
+                                        setItemsArray(
+                                            extractData(mainData, false)
+                                        )
+                                    }}
+                                ></Category>
+                                <div
+                                    className={`div-box${
+                                        isSkills ? "" : "-checked"
+                                    }`}
+                                ></div>
+                            </div>
                         </div>
-                        <h2>&</h2>
-                        <div className="category-button">
-                            <Category
-                                category={"Tools"}
-                                checked={isSkills}
-                                handleChange={() => {
-                                    setIsSkills(false)
-                                    setItemsArray(extractData(mainData, false))
-                                }}
-                            ></Category>
-                            <div
-                                className={`div-box${
-                                    isSkills ? "" : "-checked"
-                                }`}
-                            ></div>
-                        </div>
-                    </div>
-                    <div className="tip">
-                        <span className="material-symbols-outlined">
-                            arrow_back
-                        </span>
-                        click to choose
-                    </div>
-                </div>
-                <div className="skill-chart-container">
-                    <ReactECharts
-                        option={generateChart(
-                            itemsArray.filter((value) => !value.filtered)
-                        )}
-                        style={{
-                            height: "auto",
-                            width: "100%",
-                            padding: "0",
-                            margin: "0",
-                            position: "relative",
-                        }}
-                    ></ReactECharts>
-                    <div className="description-card">
-                        <div className="description-header">
-                            <h2>{categoryCapital} Chart</h2>
-                            <h3>My {category}</h3>
-                            <p>
-                                This chart represent how often i use my{" "}
-                                {category} for my previous works or projects.
-                                This awesome chart created using Apache Echarts
-                                library.
-                            </p>
+                        <div className="tip">
+                            <span className="material-symbols-outlined">
+                                arrow_back
+                            </span>
+                            click to choose
                         </div>
                     </div>
-                </div>
-                <div className="container-header">
-                    <h3>
-                        {categoryCapital} that used for my project and works
-                    </h3>
-                    <div className="tip">click to filter</div>
-                </div>
-                <div className="skill-filter-options">
-                    <OptionTags
-                        name="Select All"
-                        filterHandler={() => {
-                            handleOption("select")
-                        }}
-                    ></OptionTags>
-                    <OptionTags
-                        name="Deselect All"
-                        filterHandler={() => {
-                            handleOption("deselect")
-                        }}
-                    ></OptionTags>
-                </div>
-                <div className="skill-filter">
-                    {itemsArray.map((item, id) => {
-                        return (
-                            <FilterTags
-                                key={`filter-${id}`}
-                                data={item}
+                    <div className="skill-chart-container">
+                        <ReactECharts
+                            option={generateChart(
+                                itemsArray.filter((value) => !value.filtered)
+                            )}
+                            style={{
+                                height: "auto",
+                                width: "100%",
+                                padding: "0",
+                                margin: "0",
+                                position: "relative",
+                            }}
+                        ></ReactECharts>
+                        <div className="description-card">
+                            <div className="description-header">
+                                <h3>My {category}</h3>
+                                <p>
+                                    This chart represent how often i use my{" "}
+                                    {category} for my previous works or
+                                    projects. This awesome chart created using
+                                    Apache Echarts library.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="skill-filter-container">
+                        <div className="skill-header">
+                            <h3>
+                                {categoryCapital} that used for my project and
+                                works
+                            </h3>
+                            <div className="tip">click to filter</div>
+                        </div>
+                        <div className="skill-filter-options">
+                            <OptionTags
+                                name="Select All"
                                 filterHandler={() => {
-                                    handleFilter(item.item)
+                                    handleOption("select")
                                 }}
-                            ></FilterTags>
-                        )
-                    })}
+                            ></OptionTags>
+                            <OptionTags
+                                name="Deselect All"
+                                filterHandler={() => {
+                                    handleOption("deselect")
+                                }}
+                            ></OptionTags>
+                        </div>
+                        <div className="skill-filter">
+                            {itemsArray.map((item, id) => {
+                                return (
+                                    <FilterTags
+                                        key={`filter-${id}`}
+                                        data={item}
+                                        filterHandler={() => {
+                                            handleFilter(item.item)
+                                        }}
+                                    ></FilterTags>
+                                )
+                            })}
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

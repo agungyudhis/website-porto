@@ -9,7 +9,7 @@
     justify-items: center;
     display: flex;
     margin-left: 50px;
-    gap: 20px;
+    gap: 40px;
 }
 
 .logo {
@@ -71,10 +71,10 @@
     width: var(--content-width);
 }
 
-.work-experience-container {
+.work-experience-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--level-1-gap);
 }
 
 .card-container {
@@ -96,7 +96,7 @@
 
 .experience-title > h2,
 h3 {
-    margin-bottom: 0;
+    margin: 0;
     padding-bottom: 0;
 }
 
@@ -110,7 +110,7 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: var(--level-1-gap);
     justify-content: center;
     padding-top: 50px;
 }
@@ -214,6 +214,7 @@ h3 {
 }
 
 .hero-title {
+    font-size: 3.2em;
     margin: 0;
 }
 
@@ -222,9 +223,26 @@ h3 {
     font-size: large;
 }
 
+.skill-title {
+    display: flex;
+    gap: var(--level-2-gap);
+}
+
 .skill-container {
     width: var(--content-width);
     padding-top: 20px;
+}
+
+.skill-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--level-1-gap);
+}
+
+.skill-filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--level-2-gap);
 }
 
 .skill-filter,
@@ -235,10 +253,6 @@ h3 {
     gap: 4px;
 }
 
-.skill-filter-options {
-    padding-bottom: 12px;
-}
-
 .sidebar-container {
     position: sticky;
     display: flex;
@@ -247,7 +261,7 @@ h3 {
     flex-direction: column;
     top: 10px;
     left: 10px;
-    gap: 20px;
+    gap: var(--level-1-gap);
 }
 
 .sidebar {
@@ -257,7 +271,7 @@ h3 {
     border-radius: 8px;
     text-align: center;
     padding: 20px 0;
-    gap: 20px;
+    gap: var(--level-1-gap);
 }
 
 .sidebar:last-child {
@@ -283,8 +297,7 @@ h3 {
 .skill-chart-container {
     height: 500px;
     display: grid;
-    padding: 20px 0;
-    gap: 20px;
+    gap: var(--level-1-gap);
     grid-template-columns: 3fr 1fr;
 }
 
@@ -295,7 +308,7 @@ h3 {
     transition: background-color var(--transition-duration);
 }
 
-.container-header {
+.skill-header {
     display: flex;
     gap: 30px;
 }
@@ -329,7 +342,7 @@ h3 {
     outline: 0px auto -webkit-focus-ring-color;
 }
 
-.category-button > button > h2 {
+.category-button > button > h1 {
     margin: 0;
 }
 

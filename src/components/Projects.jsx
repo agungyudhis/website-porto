@@ -10,7 +10,7 @@ export default function Projects({ refProp }) {
     return (
         <>
             <div className="card-container" ref={refProp}>
-                <h2>Works & Projects</h2>
+                <h1>Projects</h1>
                 <ResponsiveMasonry
                     columnsCountBreakPoints={MASONRY_BREAKPOINTS}
                 >

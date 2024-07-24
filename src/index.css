@@ -24,6 +24,9 @@
 
     --transition-slow: 0.8s ease;
     --transition-fast: 0.2s ease;
+
+    --level-1-gap: 20px;
+    --level-2-gap: 10px;
     /* --transition-slow: 2s ease;
     --transition-fast: 1s ease; */
 }
@@ -142,8 +145,12 @@ h2 {
     color: var(--clr-primary);
 }
 
+h2 {
+    font-weight: 600;
+}
+
 h1 {
-    font-size: 3.2em;
+    font-size: 2em;
     font-family: Inter, Helvetica;
     font-weight: 700;
 }

@@ -28,14 +28,17 @@ export default function WorkExperience({ refProp }) {
 
     return (
         <div className="work-experience-container" ref={refProp}>
-            {works_experience.map((experience, id) => {
-                return (
-                    <Experience
-                        data={experience}
-                        key={`experience-${id}`}
-                    ></Experience>
-                )
-            })}
+            <h1>Work Experience</h1>
+            <div className="work-experience-wrapper">
+                {works_experience.map((experience, id) => {
+                    return (
+                        <Experience
+                            data={experience}
+                            key={`experience-${id}`}
+                        ></Experience>
+                    )
+                })}
+            </div>
         </div>
     )
 }
