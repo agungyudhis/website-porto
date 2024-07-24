@@ -3,6 +3,7 @@ import colPal from "../assets/TagsColor.json"
 
 const profileData = {
     title: descData.title,
+    subtitle: descData.subtitle,
     intro: descData.intro,
     contacts: descData.contacts,
 }

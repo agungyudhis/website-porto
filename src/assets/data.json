@@ -1,8 +1,9 @@
 {
-    "title": "Hello! I'm Yudhistira",
-    "intro": "I’m a Data Analyst from Depok, Jawa Barat. I work part-time at Funnelink, a company focused on online marketing optimization and customer relationship management. As a data analyst, I help the team process the data from raw data provided by clients, and then I build an automatic dashboard and sometimes do some research for clients. Beyond my professional interests, I enjoy photography, design, and music, which allow me to explore my creative side.",
+    "title": "Data Analyst",
+    "subtitle": "Hello! I'm Yudhistira Jinawi Agung.",
+    "intro": "<b>Data Analyst</b> with 1.5+ years experience. Part-time worker at <b class=\"tooltip\">Funnelink<span class=\"tooltip-text\">A company that focuses on helping optimize online marketing and customer relationship management for UMKM (Usaha Mikro Kecil dan Menengah).</span></b>. Former Data Scientist intern at <b class=\"tooltip\">VOCASIA<span class=\"tooltip-text\">Vocasia.id is an online educational marketplace & learning management system platform to share structured expertise and knowledge, and can be used widely for both individuals and communities at an affordable price.</span></b>. Experienced in Data Pipeline, Data Visualization, and Machine Learning (NLP).",
     "contacts": {
-        "email": "yudhistira.jinawi@sci.ui.ac.id",
+        "email": "mailto:yudhistira.jinawi@sci.ui.ac.id",
         "linkedin": "https://www.linkedin.com/in/agungyudhis/",
         "github": "https://github.com/agungyudhis",
         "instagram": "https://www.instagram.com/agungyudhis/",

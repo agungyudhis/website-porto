@@ -7,7 +7,7 @@ const scrollToSection = (elementRef) => {
     })
 }
 
-export default function Sidebar({ profile, skill, project, contact }) {
+export default function Sidebar({ profile, skill, project }) {
     return (
         <div className="sidebar-container">
             <div className="sidebar">
@@ -33,14 +33,6 @@ export default function Sidebar({ profile, skill, project, contact }) {
                         onClick={() => scrollToSection(project)}
                     >
                         work
-                    </span>
-                </div>
-                <div className="sidebar-icon">
-                    <span
-                        className="material-symbols-outlined"
-                        onClick={() => scrollToSection(contact)}
-                    >
-                        mail
                     </span>
                 </div>
             </div>

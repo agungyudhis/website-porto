@@ -40,19 +40,18 @@
 }
 
 .intro-container {
-    height: auto;
+    height: 100vh;
     width: var(--content-width);
-    padding: 50px 0;
-    padding-bottom: 0px;
     margin: 0;
-}
-
-.intro-container > h1 {
-    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 25% 0;
+    justify-content: center;
 }
 
 .intro-container > p {
-    font-size: x-large;
+    font-size: medium;
+    text-align: center;
 }
 
 .contacts {
@@ -70,13 +69,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-around;
-    margin-bottom: 50px;
+    justify-content: center;
+    padding-top: 50px;
 }
 
 .card,
 .contact-card {
-    font-size: 1rem;
     color: var(--clr-fg);
     background-color: var(--clr-card);
     border-radius: var(--card-border-radius);
@@ -90,10 +88,15 @@
 }
 
 .contact-card {
-    width: 300px;
-    height: 40px;
     justify-content: center;
     align-items: center;
+    padding: 5px;
+}
+
+.contact-card img {
+    height: 40px;
+    background: none;
+    box-shadow: none;
 }
 
 .card:hover,
@@ -151,9 +154,17 @@
 
 .title-container {
     display: flex;
-    flex-direction: row;
-    gap: 40px;
+    flex-direction: column;
     align-items: center;
+}
+
+.hero-title {
+    margin: 0;
+}
+
+.hero-subtitle {
+    color: var(--clr-fg);
+    font-size: large;
 }
 
 .skill-container {
@@ -279,4 +290,35 @@
     width: 60%;
     background-color: var(--clr-accent);
     transform: translateX(80%);
+}
+
+.tooltip {
+    color: var(--clr-accent);
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 300px;
+    padding: 0.25em 0.5em;
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+    text-align: center;
+    border-radius: 0.25em;
+    font-size: medium;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right: 100%;
+    transition-property: visibility;
+    transition-delay: 0s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    transition-delay: 0.3s;
 }

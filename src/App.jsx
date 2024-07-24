@@ -6,7 +6,6 @@ import Sidebar from "./components/Sidebar.jsx"
 import Intro from "./components/Intro.jsx"
 import Skills from "./components/Skills.jsx"
 import Projects from "./components/Projects.jsx"
-import Contacts from "./components/Contacts.jsx"
 import { useRef } from "react"
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
     const profile = useRef(null)
     const skill = useRef(null)
     const project = useRef(null)
-    const contact = useRef(null)
 
     return (
         <div className="App" data-theme={isDark ? "dark" : "light"}>
@@ -23,7 +21,6 @@ function App() {
                 profile={profile}
                 skill={skill}
                 project={project}
-                contact={contact}
             ></Sidebar>
             <div className="main-container">
                 <DataProvider>
@@ -31,7 +28,6 @@ function App() {
                     <Intro refProp={profile}></Intro>
                     <Skills refProp={skill}></Skills>
                     <Projects refProp={project}></Projects>
-                    <Contacts refProp={contact}></Contacts>
                 </DataProvider>
             </div>
         </div>
