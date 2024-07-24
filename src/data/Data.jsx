@@ -6,6 +6,7 @@ const profileData = {
     subtitle: descData.subtitle,
     intro: descData.intro,
     contacts: descData.contacts,
+    works_experience: descData.works_experience,
 }
 
 const initialData = descData.projects.map((value) => {

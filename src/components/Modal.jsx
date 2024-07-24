@@ -1,7 +1,6 @@
-import React, { useState } from "react"
+import React, { useState, useContext } from "react"
 import "../style/Modal.css"
-// TODO: Restructure link data
-// TODO: Add name for link
+import { DataContext } from "../context/Contexts"
 // TODO: Use tags for skills and tools section
 function Tags({ data }) {
     const spanStyle = {
@@ -22,36 +21,43 @@ function Tags({ data }) {
 }
 
 export default function Card({ itemsArray, data, isSkills }) {
+    const { skillsArray, toolsArray } = useContext(DataContext)
     const [modal, setModal] = useState(false)
     const toggleModal = () => {
         setModal(!modal)
-        document.body.style.overflow = modal ? 'visible' : 'hidden'
-
+        document.body.style.overflow = modal ? "visible" : "hidden"
     }
+
+    const tagsContentMap = (data, itemsArray, isSkills) => {
+        return (
+            <div className="tags-container">
+                {data[isSkills ? "skills" : "tools"].map((content, id) => {
+                    const contentData = itemsArray.find((value) => {
+                        return value.item === content
+                    })
+                    return (
+                        <Tags
+                            key={`${content}-${id}`}
+                            data={contentData}
+                        ></Tags>
+                    )
+                })}
+            </div>
+        )
+    }
+
     return (
         <>
             <div className="card" onClick={toggleModal}>
                 <h3>{data.name}</h3>
-                <div className="tags-container">
-                    {data[isSkills ? "skills" : "tools"].map((content, id) => {
-                        const contentData = itemsArray.find((value) => {
-                            return value.item === content
-                        })
-                        return (
-                            <Tags
-                                key={`${content}-${id}`}
-                                data={contentData}
-                            ></Tags>
-                        )
-                    })}
-                </div>
+                {tagsContentMap(data, itemsArray, isSkills)}
             </div>
             {modal && (
                 <>
                     <div className="modal">
                         <div className="overlay" onClick={toggleModal}></div>
                         <div className="modal-content">
-                            {data?.images && data?.images.length != 0 && 
+                            {data?.images && data?.images.length != 0 && (
                                 <div className="modal-img">
                                     {data.images.map((image, id) => {
                                         return (
@@ -62,20 +68,28 @@ export default function Card({ itemsArray, data, isSkills }) {
                                         )
                                     })}
                                 </div>
-                            }
+                            )}
                             <div className="modal-description">
                                 <h3>{data.name}</h3>
                                 <p>{data.description}</p>
                                 {data?.tools && (
                                     <div>
                                         <h4>Tools used:</h4>
-                                        {data.tools.join(", ")}
+                                        {tagsContentMap(
+                                            data,
+                                            toolsArray,
+                                            false
+                                        )}
                                     </div>
                                 )}
                                 {data?.skills && (
                                     <div>
                                         <h4>Skills used:</h4>
-                                        {data.skills.join(", ")}
+                                        {tagsContentMap(
+                                            data,
+                                            skillsArray,
+                                            true
+                                        )}
                                     </div>
                                 )}
                                 {data?.project_at && (
@@ -89,8 +103,16 @@ export default function Card({ itemsArray, data, isSkills }) {
                                         <h4>External Link:</h4>
                                         {data.external_link.map((link, id) => {
                                             return (
-                                                <li key={`modal-link-${id}`} className="url-list">
-                                                    <a href={link.url} target="_blank" >{link.name}</a>
+                                                <li
+                                                    key={`modal-link-${id}`}
+                                                    className="url-list"
+                                                >
+                                                    <a
+                                                        href={link.url}
+                                                        target="_blank"
+                                                    >
+                                                        {link.name}
+                                                    </a>
                                                 </li>
                                             )
                                         })}

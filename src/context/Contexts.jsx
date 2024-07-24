@@ -10,8 +10,10 @@ const ThemeContext = createContext()
 function DataProvider({ children }) {
     const [isSkills, setIsSkills] = useLocalStorage("isSkills", true)
     const [mainData, setMainData] = useState(initialData)
+    const [skillsArray, setSkillsArray] = useState(extractData(mainData, true))
+    const [toolsArray, setToolsArray] = useState(extractData(mainData, false))
     const [itemsArray, setItemsArray] = useState(
-        extractData(mainData, isSkills)
+        isSkills ? skillsArray : toolsArray
     )
 
     useEffect(() => {
@@ -27,6 +29,8 @@ function DataProvider({ children }) {
         setMainData,
         itemsArray,
         setItemsArray,
+        skillsArray,
+        toolsArray,
     }
     return <DataContext.Provider value={value}>{children}</DataContext.Provider>
 }
@@ -35,11 +39,11 @@ function ThemeProvider({ children }) {
     const preference = window.matchMedia("(prefers-color-scheme: dark)").matches
     const [isDark, setIsDark] = useLocalStorage("isDark", preference)
     if (isDark) {
-        document.body.classList.remove('light')
-        document.body.classList.add('dark')
+        document.body.classList.remove("light")
+        document.body.classList.add("dark")
     } else {
-        document.body.classList.remove('dark')
-        document.body.classList.add('light')
+        document.body.classList.remove("dark")
+        document.body.classList.add("light")
     }
     const value = { isDark, setIsDark }
     return (

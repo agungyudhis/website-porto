@@ -1,7 +1,7 @@
 {
     "title": "Data Analyst",
     "subtitle": "Hello! I'm Yudhistira Jinawi Agung.",
-    "intro": "<b>Data Analyst</b> with 1.5+ years experience. Part-time worker at <b class=\"tooltip\">Funnelink<span class=\"tooltip-text\">A company that focuses on helping optimize online marketing and customer relationship management for UMKM (Usaha Mikro Kecil dan Menengah).</span></b>. Former Data Scientist intern at <b class=\"tooltip\">VOCASIA<span class=\"tooltip-text\">Vocasia.id is an online educational marketplace & learning management system platform to share structured expertise and knowledge, and can be used widely for both individuals and communities at an affordable price.</span></b>. Experienced in Data Pipeline, Data Visualization, and Machine Learning (NLP).",
+    "intro": "<b>Data Analyst</b> with 1.5+ years experience. Part-time worker at <b class=\"tooltip\"><u>FunneLink</u><span class=\"tooltip-text\">A company that focuses on helping optimize online marketing and customer relationship management for UMKM (Usaha Mikro Kecil dan Menengah).</span></b>. Former Data Scientist intern at <b class=\"tooltip\"><u>VOCASIA</u><span class=\"tooltip-text\">Vocasia.id is an online educational marketplace & learning management system platform to share structured expertise and knowledge, and can be used widely for both individuals and communities at an affordable price.</span></b>. Experienced in Data Pipeline, Data Visualization, and Machine Learning (NLP).",
     "contacts": {
         "email": "mailto:yudhistira.jinawi@sci.ui.ac.id",
         "linkedin": "https://www.linkedin.com/in/agungyudhis/",
@@ -9,6 +9,45 @@
         "instagram": "https://www.instagram.com/agungyudhis/",
         "tableau": "https://public.tableau.com/app/profile/agungyudhis/vizzes"
     },
+    "works_experience": [
+        {
+            "company": "FunneLink",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi ut itaque nemo, optio cupiditate, suscipit inventore, dicta commodi cum ad impedit? Officia ipsa maxime accusamus ipsum maiores quibusdam porro!",
+            "tasks": [
+                "Supported clients with a total daily revenue up to 100 million rupiah through data-driven insights",
+                "Developed and maintained data warehouses for 3-4 clients using MySQL",
+                "Developed and maintained data pipelines using Python and Cron for scheduling",
+                "Designed and implemented interactive dashboard using Looker Studio or Grafana for each client",
+                "Created custom charts using Apache Echarts and JavaScript on Grafana",
+                "Collected external data using Selenium and Python",
+                "Performed customer segmentation based on recency, frequency, and monetary to enhance retention strategies",
+                "Conducted sentiment analysis and topic clustering on Google Maps reviews data"
+            ],
+            "period": {
+                "start": "3 February 2023",
+                "end": "Present"
+            },
+            "position": "Part-time Data Analyst"
+        },
+        {
+            "company": "VOCASIA",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi ut itaque nemo, optio cupiditate, suscipit inventore, dicta commodi cum ad impedit? Officia ipsa maxime accusamus ipsum maiores quibusdam porro!",
+            "tasks": [
+                "Integrated data from various sources to Google Sheets using Google Sheets API",
+                "Collected external data using Selenium and Python",
+                "Created interactive dashboards using Google Data Studio",
+                "Developed classification model using BERT to categorize review data as criticism or not with 97% accuracy",
+                "Provided course and article topic recommendations by leveraging forecasting data from Google Trends",
+                "Conducted comprehensive competitor analysis based on topics, prices, reviews, discounts, and ratings to inform strategic decisions",
+                "Received an award for being the best data scientist mentee"
+            ],
+            "period": {
+                "start": "18 August 2022",
+                "end": "31 December 2022"
+            },
+            "position": "Data Scientist Internship"
+        }
+    ],
     "projects": [
         {
             "name": "Data Pipeline",
@@ -41,12 +80,17 @@
         },
         {
             "name": "Looker Studio Dashboards",
-            "description": "Designed and implemented Looker Studio interactive dashboard using Google Sheets as data source.",
+            "description": "Designed and implemented Looker Studio interactive dashboard using Google Sheets as data source. Designed and implemented Looker Studio interactive dashboard using Google Sheets as data source. Designed and implemented Looker Studio interactive dashboard using Google Sheets as data source. Designed and implemented Looker Studio interactive dashboard using Google Sheets as data source.",
             "tools": ["Google Looker Studio", "Google Sheets"],
             "skills": ["Data Visualization", "Creative Thinking"],
             "project_at": ["Funnelink", "VOCASIA"],
             "images": [
-                "looker-dashboards-1.png", 
+                "looker-dashboards-1.png",
+                "looker-dashboards-2.png",
+                "looker-dashboards-2.png",
+                "looker-dashboards-2.png",
+                "looker-dashboards-2.png",
+                "looker-dashboards-2.png",
                 "looker-dashboards-2.png"
             ]
         },
@@ -132,12 +176,12 @@
                     "name": "Public Tableau Profile"
                 },
                 {
-                    "url":"https://gatrik.esdm.go.id/frontend/download_index/?kode_category=statistik",
-                    "name":"Data Source 1: Gatrik ESDM"
+                    "url": "https://gatrik.esdm.go.id/frontend/download_index/?kode_category=statistik",
+                    "name": "Data Source 1: Gatrik ESDM"
                 },
                 {
-                    "url":"https://openinframap.org/stats/area/Indonesia/plants",
-                    "name":"Data Source 2: Open Infrastructure Map Indonesia Power Plants"
+                    "url": "https://openinframap.org/stats/area/Indonesia/plants",
+                    "name": "Data Source 2: Open Infrastructure Map Indonesia Power Plants"
                 }
             ]
         },
@@ -161,7 +205,7 @@
                 "Machine Learning",
                 "Natural Language Processing"
             ],
-            "project_at": ["Academic"],
+            "project_at": ["Academic Project"],
             "images": [],
             "url": ["https://www.researchsquare.com/article/rs-3637575/v1"]
         },
@@ -174,16 +218,16 @@
                 "Machine Learning",
                 "Natural Language Processing"
             ],
-            "project_at": ["Academic"],
+            "project_at": ["Academic Project"],
             "images": [],
             "url": []
         },
         {
             "name": "Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019",
-            "description": "Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019",
+            "description": "Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019",
             "tools": ["QGIS", "R"],
             "skills": ["Programming", "Analytics", "Spatial Analytics"],
-            "project_at": ["Academic"],
+            "project_at": ["Academic Project"],
             "images": [],
             "url": []
         },
@@ -197,11 +241,17 @@
                 "Creative Thinking",
                 "Communication"
             ],
-            "project_at": ["Organization"],
+            "project_at": ["Organization Project"],
             "images": [],
-            "url": [
-                "https://youtu.be/ek7qP1CXuTM",
-                "https://youtu.be/DCP5Maa7leA?t=1020"
+            "external_link": [
+                {
+                    "url": "https://youtu.be/ek7qP1CXuTM",
+                    "name": "Editing Process Timelapse"
+                },
+                {
+                    "url": "https://youtu.be/DCP5Maa7leA?t=1020",
+                    "name": "Virtual Charity Concert - Cinestra: Pathway to Fantasy"
+                }
             ]
         },
         {
@@ -209,9 +259,11 @@
             "description": "...",
             "tools": ["Adobe Photoshop"],
             "skills": ["Graphic Design", "Creative Thinking", "Communication"],
-            "project_at": ["Organization"],
+            "project_at": ["Organization Project"],
             "images": [],
-            "url": ["https://issuu.com/osuimahawaditra/docs/emagz_2020_fix"]
+            "external_link": [
+                "https://issuu.com/osuimahawaditra/docs/emagz_2020_fix"
+            ]
         },
         {
             "name": "Personal Budget Manager Spreadsheet",
@@ -220,7 +272,7 @@
             "skills": ["Programming", "Creative Thinking"],
             "project_at": ["Personal Project"],
             "images": [],
-            "url": null
+            "external_link": null
         },
         {
             "name": "Website Portfolio",
@@ -229,7 +281,7 @@
             "skills": ["Programming", "Creative Thinking", "Graphic Design"],
             "project_at": ["Personal Project"],
             "images": [],
-            "url": null
+            "external_link": null
         }
     ],
     "awards": [
@@ -238,21 +290,21 @@
             "award_at": "VOCASIA",
             "date": "2022-12-31",
             "image": "",
-            "url": ""
+            "external_link": ""
         },
         {
             "name": "Best Public Relations Staff",
-            "award_at": "Organization",
+            "award_at": "Organization Project",
             "date": "2022-08-28",
             "image": "",
-            "url": "https://www.instagram.com/p/ChythMIvaX1/?img_index=2"
+            "external_link": "https://www.instagram.com/p/ChythMIvaX1/?img_index=2"
         },
         {
             "name": "Best Public Relations (Design) Staff",
-            "award_at": "Organization",
+            "award_at": "Organization Project",
             "date": "2020-08-07",
             "image": "",
-            "url": "https://www.instagram.com/p/CDlX0J2s1ud/?img_index=2"
+            "external_link": "https://www.instagram.com/p/CDlX0J2s1ud/?img_index=2"
         }
     ]
 }
