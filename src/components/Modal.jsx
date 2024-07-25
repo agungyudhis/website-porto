@@ -63,7 +63,7 @@ export default function Card({ itemsArray, data, isSkills }) {
                                         return (
                                             <img
                                                 key={`modal-img-${id}`}
-                                                src={`/public/img/${image}`}
+                                                src={`/img/${image}`}
                                             />
                                         )
                                     })}
