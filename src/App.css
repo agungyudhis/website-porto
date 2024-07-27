@@ -71,6 +71,10 @@
     width: var(--content-width);
 }
 
+.card-container {
+    min-height: 80vh;
+}
+
 .work-experience-wrapper {
     display: flex;
     flex-direction: column;

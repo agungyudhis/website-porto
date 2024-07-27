@@ -12,16 +12,15 @@
     "works_experience": [
         {
             "company": "FunneLink",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi ut itaque nemo, optio cupiditate, suscipit inventore, dicta commodi cum ad impedit? Officia ipsa maxime accusamus ipsum maiores quibusdam porro!",
             "tasks": [
-                "Supported clients with a total daily revenue up to 100 million rupiah through data-driven insights",
-                "Developed and maintained data warehouses for 3-4 clients using MySQL",
+                "Assisted clients with total daily revenue of up to 100 million rupiahs through data-driven insights",
+                "Developed and maintained data warehouses for 3-4 clients using MySQL and Google Sheets",
                 "Developed and maintained data pipelines using Python and Cron for scheduling",
-                "Designed and implemented interactive dashboard using Looker Studio or Grafana for each client",
-                "Created custom charts using Apache Echarts and JavaScript on Grafana",
+                "Designed and implemented an interactive dashboard using Looker Studio or Grafana for each client",
+                "Created custom charts using Apache Echarts on Grafana",
                 "Collected external data using Selenium and Python",
-                "Performed customer segmentation based on recency, frequency, and monetary to enhance retention strategies",
-                "Conducted sentiment analysis and topic clustering on Google Maps reviews data"
+                "Performed customer segmentation based on recency and frequency to enhance retention strategies",
+                "Conducted sentiment analysis and topic clustering on Google Maps review data"
             ],
             "period": {
                 "start": "3 February 2023",
@@ -31,7 +30,6 @@
         },
         {
             "company": "VOCASIA",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi ut itaque nemo, optio cupiditate, suscipit inventore, dicta commodi cum ad impedit? Officia ipsa maxime accusamus ipsum maiores quibusdam porro!",
             "tasks": [
                 "Integrated data from various sources to Google Sheets using Google Sheets API",
                 "Collected external data using Selenium and Python",
@@ -50,8 +48,8 @@
     ],
     "projects": [
         {
-            "name": "Data Pipeline",
-            "description": "Communicate with Funnelink's clients' data teams for data understanding. Build data ETL from various data source (spreadsheets, MySQL, Google Analytics). I use MySQL for data warehouse",
+            "name": "Data Pipeline and Data Warehouse",
+            "description": "Communicate with Funnelink's clients' data teams to understand their data. Create data <a href=\"https://aws.amazon.com/what-is/etl/#:~:text=Extract%2C%20transform%2C%20and%20load%20(,and%20machine%20learning%20(ML).\" target=\"_blank\">ETL</a> from various sources, including spreadsheets and <a href=\"https://www.mysql.com/\" target=\"_blank\">MySQL</a>.\nI was first introduced to data pipelines during my internship at Vocasia. The main objective of establishing the data pipeline was to process and transfer data from MySQL to the data warehouse, which used <a href=\"https://workspace.google.com/intl/en_id/products/sheets/\" target=\"_blank\">Google Sheets</a>, utilizing the <a href=\"https://developers.google.com/sheets/api/guides/concepts\" target=\"_blank\">Google Sheets API</a>. At that time, the data pipeline process used Python, running locally. The Python script is still executed manually every day. Then, I took the initiative to use the Windows Task Scheduler to run the script automatically.\nWhen I worked at FunneLink, the data pipeline process was run on a cloud server. Therefore, I replaced the Windows Task Scheduler with <a href=\"https://en.wikipedia.org/wiki/Cron\" target=\"_blank\">Cron</a>. The client's data grew quickly, and the Google Sheets became slow, so I started using MySQL as a data warehouse.",
             "tools": ["MySQL", "Python", "Google API", "Spreadsheets", "Cron"],
             "skills": [
                 "Data Pipeline",
@@ -62,41 +60,23 @@
                 "Communication"
             ],
             "project_at": ["Funnelink", "VOCASIA"],
-            "images": [],
-            "count": 2
-        },
-        {
-            "name": "Data Warehouse",
-            "description": "Build data warehouse using MySQL to store transformed data and used for interactive dashboards.",
-            "tools": ["MySQL", "Python"],
-            "skills": [
-                "Database",
-                "Data Warehousing",
-                "Programming",
-                "Data Query"
-            ],
-            "project_at": ["Funnelink"],
             "images": []
         },
         {
             "name": "Looker Studio Dashboards",
-            "description": "Designed and implemented Looker Studio interactive dashboard using Google Sheets as data source. Designed and implemented Looker Studio interactive dashboard using Google Sheets as data source. Designed and implemented Looker Studio interactive dashboard using Google Sheets as data source. Designed and implemented Looker Studio interactive dashboard using Google Sheets as data source.",
-            "tools": ["Google Looker Studio", "Google Sheets"],
+            "description": "I built and maintained interactive and easy-to-use <a href=\"https://lookerstudio.google.com/overview\" target=\"_blank\">Looker Studio</a> dashboards for Vocasia's stakeholders and FunneLink's clients. The dashboard is used to help stakeholders determine data-driven business strategies. There are generally three main pages: sales by period, customers, and sales by location. Sales by period: Describe how the sales have performed over time. The customer page describes purchasing behavior, such as how often customers buy products on average. Sales by location describe the top province and city by revenue or profit.\nTo build interactive dashboards, I begin by identifying client or stakeholder needs. Next, I check the available data source and configure data types. Then, I create a calculated field for specific metrics. After that, I started to build the charts. For interactivity, I added filters and drill-down metrics.\nThe outcome of building an interactive dashboard is faster and more efficient business decision-making. The workload of creating reports is reduced, as stakeholders can access the interactive dashboards in real-time, which allows me to focus on ad-hoc or one-time analyses.",
+            "tools": ["Google Looker Studio", "Spreadsheets"],
             "skills": ["Data Visualization", "Creative Thinking"],
             "project_at": ["Funnelink", "VOCASIA"],
             "images": [
                 "looker-dashboards-1.png",
                 "looker-dashboards-2.png",
-                "looker-dashboards-2.png",
-                "looker-dashboards-2.png",
-                "looker-dashboards-2.png",
-                "looker-dashboards-2.png",
-                "looker-dashboards-2.png"
+                "looker-dashboards-3.png"
             ]
         },
         {
             "name": "Grafana Dashboards",
-            "description": "Designed and implemented Grafana interactive dashboard using MySQL as data source",
+            "description": "I built and maintained interactive and easy-to-use <a href=\"https://grafana.com/\" target=\"_blank\">Grafana</a> dashboards for FunneLink's clients. The dashboard is used to help stakeholders determine data-driven business strategies. There are generally three main pages: sales by period, customers, and sales by location. Sales by period: Describe how the sales have performed over time. The customer page describes purchasing behavior, such as how often customers buy products on average. Sales by location describe the top province and city by revenue or profit.\nTo build interactive Grafana dashboards, I begin by identifying client or stakeholder needs. Next, I check the available data source. Then, I prepare queries for charts and configure the charts. For interactivity, I added filters using built-in variables or <a href=\"https://grafana.com/grafana/plugins/volkovlabs-variable-panel/\" target=\"_blank\">Business Variable</a>. For specific charts that are not possible to build using a built-in chart, such as RFM plot and cohort chart, I use the <a href=\"https://grafana.com/grafana/plugins/volkovlabs-echarts-panel/\" target=\"_blank\">Business Charts</a> plugin powered by the <a href=\"https://echarts.apache.org/en/index.html\" target=\"_blank\">Apache ECharts</a> library.\nThe outcome of building an interactive dashboard is faster and more efficient business decision-making. The workload of creating reports is reduced, as stakeholders can access the interactive dashboards in real-time, which allows me to focus on ad-hoc or one-time analyses.\nI built a Grafana sample dashboard using randomly generated data (based on real data). I hosted it using <a href=\"https://aws.amazon.com\" target=\"_blank\">Amazon Web Services</a> EC2 + RDS. You can access the dashboard via <a href=\"http://54.252.57.201:3000/\" target=\"_blank\">this link</a> and account: <b>username: sample-viewer</b> and <b>password: sample-viewer-pass</b>",
             "tools": ["Grafana", "MySQL", "JavaScript", "AWS"],
             "skills": [
                 "Data Visualization",
@@ -104,28 +84,43 @@
                 "Programming",
                 "Data Query"
             ],
-            "project_at": ["Funnelink", "VOCASIA", "Personal Project"],
-            "images": []
+            "project_at": ["Funnelink", "Personal Project"],
+            "images": ["grafana-dashboard-1.png", "grafana-dashboard-2.png"],
+            "external_link": [
+                {
+                    "name": "Grafana Sample Dashboard",
+                    "url": "http://54.252.57.201:3000/"
+                }
+            ]
         },
         {
             "name": "Website Scraping",
-            "description": "Collects external data from various website using Selenium and Python.",
-            "tools": ["Python", "Selenium", "HTML"],
+            "description": "I collect external data from various websites using <a href=\"https://www.selenium.dev/\" target=\"_blank\">Selenium</a> and <a href=\"https://www.python.org/\" target=\"_blank\">Python</a>. I usually collect external data from <a href=\"https://www.google.com/maps\" target=\"_blank\">Google Maps</a>, <a href=\"https://shopee.co.id/\" target=\"_blank\">Shopee</a>, and <a href=\"https://www.tokopedia.com/\" target=\"_blank\">Tokopedia</a>. External data is needed for several analyses, such as competitor or product price analyses. In general, I use Selenium to automate the data collection, but in some cases, I get the data from <a href=\"https://en.wikipedia.org/wiki/HAR_(file_format)\" target=\"_blank\">HAR</a> file and parse it using Python.",
+            "tools": ["Python", "Selenium"],
             "skills": ["Programming", "Web Scraping"],
             "project_at": ["Funnelink", "VOCASIA"],
             "images": []
         },
         {
             "name": "Customer Segmentation",
-            "description": "Performed customer segmentation based on recency and frequency to enhance retention strategies.",
+            "description": "I performed customer segmentation based on recency and frequency to enhance retention strategies for Funnelink's clients. I do two types of customer segmentation: the first uses recency percentiles, and the other uses interarrival times between purchases. I visualize the customer segment using recency and frequency plots in <a href=\"http://54.252.57.201:3000/\" target=\"_blank\">Grafana</a>. Use this account to access the dashboard: <b>username: sample-viewer</b> and <b>password: sample-viewer-pass</b>.",
             "tools": ["Python", "MySQL"],
-            "skills": ["Programming", "Web Scraping"],
-            "project_at": ["Funnelink", "VOCASIA"],
-            "images": []
+            "skills": ["Programming", "Analytics", "Data Query"],
+            "project_at": ["Funnelink"],
+            "images": [
+                "customer-segmentation-1.png",
+                "customer-segmentation-2.png"
+            ],
+            "external_link": [
+                {
+                    "name": "Grafana Sample Dashboard",
+                    "url": "http://54.252.57.201:3000/"
+                }
+            ]
         },
         {
             "name": "Google Review Sentiment Analysis and Topic Clustering",
-            "description": "Performed sentiment analysis using BERT on Google Review data. Then, I performed topic clustering for each sentiment category (positive, neutral, and negative) to identify dominant themes.",
+            "description": "I performed sentiment analysis using <a href=\"https://arxiv.org/abs/1810.04805\" target=\"_blank\">BERT</a> on Google Review data. Then, I performed topic clustering for each sentiment category (positive, neutral, and negative) to identify dominant topics.",
             "tools": ["Python", "Pytorch"],
             "skills": [
                 "Programming",
@@ -133,11 +128,11 @@
                 "Natural Language Processing"
             ],
             "project_at": ["Funnelink"],
-            "images": []
+            "images": ["sentiment-analysis-1.png", "sentiment-analysis-2.png"]
         },
         {
             "name": "Review Classification Model using BERT",
-            "description": "Developed classification model using BERT to categorize review data as criticism or not with 97% accuracy.",
+            "description": "Developed classification model using <a href=\"https://arxiv.org/abs/1810.04805\" target=\"_blank\">Bidirectional Encoder Representation from Transformers (BERT)</a> to categorize review data as criticism or not with 97% accuracy. The modeling uses a combination of BERT and <a href=\"https://arxiv.org/abs/1511.08458\" target=\"_blank\">Convolutional Neural Network (CNN)</a> models. Modeling is done using the <a href=\"https://www.tensorflow.org/\" target=\"_blank\">Python TensorFlow library</a>. The BERT model is pre-trained, meaning the model has been trained on a large text corpus for classification and other NLP tasks. The result can be used to help stakeholders filter the review so they can focus on the criticism review and fix the problem efficiently.",
             "tools": ["Python", "Tensorflow"],
             "skills": [
                 "Programming",
@@ -145,31 +140,42 @@
                 "Natural Language Processing"
             ],
             "project_at": ["VOCASIA"],
-            "images": []
+            "images": [
+                "review-classification-1.png",
+                "review-classification-2.png"
+            ]
         },
         {
             "name": "Google Trends Forecasting",
-            "description": "Provided course and article topic recommendations by leveraging forecasting data from Google Trends.",
+            "description": "I provided the course and article topic recommendations by leveraging forecasting data from <a href=\"https://trends.google.com/trends/\" target=\"_blank\">Google Trends</a>. This analysis aims to predict what topics will be trending in the first quarter of 2023 on the Google search engine to determine the course topics or article topics to be created.\nThis project uses interest over time data from Google Trends. A high interest over time value indicates that a keyword is widely searched by search engine users. This interest over time data is in the form of time series data. Time series prediction models such as <a href=\"https://www.sciencedirect.com/science/article/abs/pii/S0360835298000667\" target=\"_blank\">ARIMA</a>, <a href=\"https://arxiv.org/abs/1909.09586\" target=\"_blank\">LSTM</a>, and <a href=\"https://facebook.github.io/prophet/\" target=\"_blank\">Prophet</a> can be used to analyze future trends. In this project, the three models are compared, and the best model is selected to make predictions for several periods in the future. Based on <a href=\"https://help.sap.com/docs/SAP_PREDICTIVE_ANALYTICS/41d1a6d4e7574e32b815f1cc87c00f42/5e5198fd4afe4ae5b48fefe0d3161810.html\" target=\"_blank\">RMSE</a> values, The Prophet model is best for predicting interest over time.",
             "tools": ["Python"],
             "skills": ["Programming", "Machine Learning", "Analytics"],
             "project_at": ["VOCASIA"],
-            "images": []
+            "images": ["google-trends-1.png", "google-trends-2.png"]
         },
         {
             "name": "Competitor Analysis",
-            "description": "Conducted comprehensive competitor analysis based on topics, prices, reviews, discounts, and ratings to inform strategic decisions.",
-            "tools": ["Python"],
-            "skills": ["Programming", "Machine Learning", "Analytics"],
+            "description": "I conducted a comprehensive competitor analysis based on topics, prices, reviews, discounts, and ratings. The purpose of this analysis is to help formulate Vocasia's marketing strategy. The results of this analysis are to provide valuable insights for companies in developing appropriate marketing strategies according to consumer needs and interests.",
+            "tools": ["Python", "Selenium", "MySQL"],
+            "skills": [
+                "Programming",
+                "Analytics",
+                "Data Query",
+                "Web Scraping"
+            ],
             "project_at": ["VOCASIA"],
-            "images": []
+            "images": ["competitor-analysis-1.png"]
         },
         {
             "name": "Indonesia Electricity Tableau Dashboard",
-            "description": "Build interactive infographic dashboard about Indonesia electricity. I use GATRIK data from Kementerian ESDM and OpenInfraMap data",
+            "description": "I built an interactive infographic dashboard about Indonesia's electricity. I use <a href=\"https://gatrik.esdm.go.id/frontend/download_index/?kode_category=statistik\" target=\"_blank\">GATRIK</a> data from Kementerian ESDM and <a href=\"https://openinframap.org/stats/area/Indonesia/plants\" target=\"_blank\">OpenInfraMap</a> data. I use <a href=\"https://www.qgis.org/\" target=\"_blank\">QGIS</a> and <a href=\"https://www.python.org/\" target=\"_blank\">Python</a> to merge two data. This infographic shows that electricity use in 2022 in Indonesia is mostly 41% from households. Indonesia's electricity source is still dominated by coal, and in the last six years, the percentage of coal use has increased.",
             "tools": ["Python", "QGIS", "Tableau"],
             "skills": ["Data Visualization", "Creative Thinking"],
             "project_at": ["Personal Project"],
-            "images": [],
+            "images": [
+                "indonesia-electricity-1.png",
+                "indonesia-electricity-2.png"
+            ],
             "external_link": [
                 {
                     "url": "https://public.tableau.com/app/profile/agungyudhis/viz/StatistikKetenagalistrikanIndonesiaTahun2022/StatistikKetenagalistrikanTahun2022",
@@ -187,62 +193,79 @@
         },
         {
             "name": "Superstore Sales Tableau Dashboard",
-            "description": "Build interactive dashboard for Superstore dataset.",
+            "description": "I built an interactive dashboard for the Superstore Sales dataset. This is my first Tableau dashboard. I built this dashboard to explore and learn Tableau.",
             "tools": ["Tableau"],
             "skills": ["Data Visualization", "Creative Thinking"],
             "project_at": ["Personal Project"],
-            "images": [],
-            "url": [
-                "https://public.tableau.com/app/profile/agungyudhis/viz/SuperstoreSales_17053696180870/SalesDashboard"
+            "images": [
+                "superstore-sales-1.png",
+                "superstore-sales-2.png",
+                "superstore-sales-3.png"
+            ],
+            "external_link": [
+                {
+                    "name": "Superstore Sales Tableau Dashboard",
+                    "url": "https://public.tableau.com/app/profile/agungyudhis/viz/SuperstoreSales_17053696180870/SalesDashboard"
+                }
             ]
         },
         {
             "name": "Final Project: Sensitivity Analysis of BERT-based EFCM Model for Topic Detection",
-            "description": "...",
-            "tools": ["Python"],
+            "description": "Topic detection is a process to get the subject matter or topic in a text document. In large data, topic detection can be done more efficiently using machine learning methods. Clustering is a machine learning method aiming to group data with similar characteristics into a group/cluster. Some examples of clustering methods are K-Means, Fuzzy C-Means (FCM), and Eigenspace-Based Fuzzy C-Means (EFCM). The clustering method only processes numeric data; therefore, a text representation method is needed. Previously used text representation methods were Bag of Words (BoW) and Term-Frequency Inverse Document Frequency (TFIDF). However, the BoW and TFIDF methods are not good at representing text contextually. In 2018 a new text representation method was discovered, namely the <a href=\"https://arxiv.org/abs/1810.04805\" target=\"_blank\">Bidirectional Encoder Representation from Transformers (BERT)</a> method. The BERT model can contextually represent text and produce high-dimensional text representations. EFCM is a clustering technique that combines the Truncated Singular Value Decomposition (TSVD) dimension reduction technique with the FCM clustering technique. In 2022 there will be research that combines BERT and EFCM for topic detection. In the BERT and EFCM combination model, there are several parameter values that can be set, including the selection of the BERT encoder layer, EFCM dimensions, and the degree of fuzziness. This study focuses on parameter sensitivity analysis to see the effect of parameter values on the performance of the BERT-based EFCM model for topic detection. Parameter sensitivity analysis uses the Sobol method to determine which parameters are insensitive and the most sensitive. Model performance was evaluated using evaluation metrics of topic coherence, topic diversity, and topic quality. The results showed that the parameters of the encoder layer, EFCM dimensions, and degree of fuzziness were sensitive to model performance. In addition, the optimal model was obtained for three datasets using the grid search method parameter tuning. Parameter tuning can improve the model performance on the three datasets based on topic quality values.",
+            "tools": ["Python", "Pytorch"],
             "skills": [
                 "Analytics",
+                "Programming",
                 "Machine Learning",
                 "Natural Language Processing"
             ],
             "project_at": ["Academic Project"],
             "images": [],
-            "url": ["https://www.researchsquare.com/article/rs-3637575/v1"]
+            "external_link": [
+                {
+                    "name": "Journal: Eigenspace-based Fuzzy C-Means with Large Language Model BERT for Topic Detection (Under Review)",
+                    "url": "https://www.researchsquare.com/article/rs-3637575/v1"
+                },
+                {
+                    "name": "Github Repository",
+                    "url": "GITHUB_SKRIPSI"
+                }
+            ]
         },
         {
             "name": "Comparative Analysis of CNN and LSTM Models for Clickbait Detection",
-            "description": "...",
-            "tools": ["Python"],
+            "description": "This project aims to identify clickbait in Indonesian online news using CNN and LSTM models with <a href=\"https://arxiv.org/abs/1810.04805\" target=\"_blank\">BERT</a> and Word2Vec as text representation methods. Then, the performance of CNN and LSTM models with BERT and Word2Vec as text representation methods in detecting clickbait in Indonesian online news titles will be compared based on accuracy, F1 score, recall, precision, and training time.\nFrom the simulation results, the BERT-LSTM model has the best performance, with an accuracy of 79.77% achieved after training for 20 minutes 43 seconds.",
+            "tools": ["Python", "Tensorflow"],
             "skills": [
                 "Analytics",
+                "Programming",
                 "Machine Learning",
                 "Natural Language Processing"
             ],
             "project_at": ["Academic Project"],
-            "images": [],
-            "url": []
-        },
-        {
-            "name": "Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019",
-            "description": "Robust Spatial Regression Model on District/City Government Revenues of West Java Province in 2019",
-            "tools": ["QGIS", "R"],
-            "skills": ["Programming", "Analytics", "Spatial Analytics"],
-            "project_at": ["Academic Project"],
-            "images": [],
-            "url": []
+            "images": [
+                "clickbait-detection-1.png",
+                "clickbait-detection-2.png"
+            ],
+            "external_link": [
+                {
+                    "name": "Github Repository",
+                    "url": "https://github.com/agungyudhis/headline-clickbait-detection-id/tree/main"
+                }
+            ]
         },
         {
             "name": "Virtual Charity Concert \"Cinestra: Pathway to Fantasy\"",
-            "description": "...",
+            "description": "I participated in editing one song at a virtual orchestra concert. The total number of videos I edited and combined is around 30. To help speed up the editing process, I use <a href=\"https://www.python.org/\" target=\"_blank\">Python</a> to generate layouts and positions for each video. Then, I used Blender to create the background animation. At that time, I had never made any animation, so I had to work on this project while learning to make simple animations and operate Blender.\nI recorded the timelapse of the editing process and uploaded it to <a href=\"https://youtu.be/ek7qP1CXuTM\" target=\"_blank\">my YouTube channel</a>.",
             "tools": ["Python", "Adobe Premiere Pro", "Blender"],
             "skills": [
-                "Programming",
                 "Video Editing",
                 "Creative Thinking",
+                "Programming",
                 "Communication"
             ],
             "project_at": ["Organization Project"],
-            "images": [],
+            "images": ["virtual-orchestra-1.png"],
             "external_link": [
                 {
                     "url": "https://youtu.be/ek7qP1CXuTM",
@@ -255,29 +278,27 @@
             ]
         },
         {
-            "name": "E-Magazine OSUI Mahawaditra 2020",
-            "description": "...",
-            "tools": ["Adobe Photoshop"],
-            "skills": ["Graphic Design", "Creative Thinking", "Communication"],
-            "project_at": ["Organization Project"],
-            "images": [],
+            "name": "Personal Budget Manager Spreadsheet",
+            "description": "I built a personal budget manager on <a href=\"https://workspace.google.com/intl/en_id/products/sheets/\" target=\"_blank\">Google Sheets</a> to maintain my spending. I also created this spreadsheet to learn how to use advanced spreadsheet functions. I took references and learned from a <a href=\"https://www.youtube.com/watch?v=eKyAOjH3Crk\" target=\"_blank\">YouTube video</a>. Then, I added new features, such as a balance page and a wishlist page. I chose Google Sheets because it can be opened on any device. You can access the template via <a href=\"https://docs.google.com/spreadsheets/d/1QACX6aEQ2n7DQHUH0EUozNDKPXaG5xxSNeBOBtDbtMY/edit?usp=sharing\" target=\"_blank\">this link</a>.",
+            "tools": ["Spreadsheets"],
+            "skills": ["Programming"],
+            "project_at": ["Personal Project"],
+            "images": ["budget-manager-1.png", "budget-manager-2.png"],
             "external_link": [
-                "https://issuu.com/osuimahawaditra/docs/emagz_2020_fix"
+                {
+                    "name": "Tutorial Reference",
+                    "url": "https://www.youtube.com/watch?v=eKyAOjH3Crk"
+                },
+                {
+                    "name": "Personal Budget Manager Spreadsheet",
+                    "url": "https://docs.google.com/spreadsheets/d/1QACX6aEQ2n7DQHUH0EUozNDKPXaG5xxSNeBOBtDbtMY/edit?usp=sharing"
+                }
             ]
         },
         {
-            "name": "Personal Budget Manager Spreadsheet",
-            "description": "...",
-            "tools": ["Spreadsheets"],
-            "skills": ["Programming", "Creative Thinking"],
-            "project_at": ["Personal Project"],
-            "images": [],
-            "external_link": null
-        },
-        {
-            "name": "Website Portfolio",
-            "description": "...",
-            "tools": ["JavaScript", "HTML"],
+            "name": "Portfolio Website",
+            "description": "I built this portfolio website using JavaScript and React.",
+            "tools": ["JavaScript", "React"],
             "skills": ["Programming", "Creative Thinking", "Graphic Design"],
             "project_at": ["Personal Project"],
             "images": [],

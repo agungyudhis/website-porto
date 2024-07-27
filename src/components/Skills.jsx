@@ -141,12 +141,20 @@ export default function Skills({ refProp }) {
                         ></ReactECharts>
                         <div className="description-card">
                             <div className="description-header">
-                                <h3>My {category}</h3>
+                                <h3>
+                                    {category === "tools" ? "Tools" : "Skills"}
+                                </h3>
                                 <p>
-                                    This chart represent how often i use my{" "}
-                                    {category} for my previous works or
-                                    projects. This awesome chart created using
-                                    Apache Echarts library.
+                                    This chart represents how often {category}{" "}
+                                    are used for previous works or projects.
+                                    This awesome chart was created using the{" "}
+                                    <a
+                                        href="https://echarts.apache.org/en/index.html"
+                                        target="_blank"
+                                    >
+                                        Apache Echarts
+                                    </a>{" "}
+                                    library.
                                 </p>
                             </div>
                         </div>
