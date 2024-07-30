@@ -76,7 +76,7 @@
         },
         {
             "name": "Grafana Dashboards",
-            "description": "I built and maintained interactive and easy-to-use <a href=\"https://grafana.com/\" target=\"_blank\">Grafana</a> dashboards for FunneLink's clients. The dashboard is used to help stakeholders determine data-driven business strategies. There are generally three main pages: sales by period, customers, and sales by location. Sales by period: Describe how the sales have performed over time. The customer page describes purchasing behavior, such as how often customers buy products on average. Sales by location describe the top province and city by revenue or profit.\nTo build interactive Grafana dashboards, I begin by identifying client or stakeholder needs. Next, I check the available data source. Then, I prepare queries for charts and configure the charts. For interactivity, I added filters using built-in variables or <a href=\"https://grafana.com/grafana/plugins/volkovlabs-variable-panel/\" target=\"_blank\">Business Variable</a>. For specific charts that are not possible to build using a built-in chart, such as RFM plot and cohort chart, I use the <a href=\"https://grafana.com/grafana/plugins/volkovlabs-echarts-panel/\" target=\"_blank\">Business Charts</a> plugin powered by the <a href=\"https://echarts.apache.org/en/index.html\" target=\"_blank\">Apache ECharts</a> library.\nThe outcome of building an interactive dashboard is faster and more efficient business decision-making. The workload of creating reports is reduced, as stakeholders can access the interactive dashboards in real-time, which allows me to focus on ad-hoc or one-time analyses.\nI built a Grafana sample dashboard using randomly generated data (based on real data). I hosted it using <a href=\"https://aws.amazon.com\" target=\"_blank\">Amazon Web Services</a> EC2 + RDS. You can access the dashboard via <a href=\"http://54.252.57.201:3000/\" target=\"_blank\">this link</a> and account: <b>username: sample-viewer</b> and <b>password: sample-viewer-pass</b>",
+            "description": "I built and maintained interactive and easy-to-use <a href=\"https://grafana.com/\" target=\"_blank\">Grafana</a> dashboards for FunneLink's clients. The dashboard is used to help stakeholders determine data-driven business strategies. There are generally three main pages: sales by period, customers, and sales by location. Sales by period: Describe how the sales have performed over time. The customer page describes purchasing behavior, such as how often customers buy products on average. Sales by location describe the top province and city by revenue or profit.\nTo build interactive Grafana dashboards, I begin by identifying client or stakeholder needs. Next, I check the available data source. Then, I prepare queries for charts and configure the charts. For interactivity, I added filters using built-in variables or <a href=\"https://grafana.com/grafana/plugins/volkovlabs-variable-panel/\" target=\"_blank\">Business Variable</a>. For specific charts that are not possible to build using a built-in chart, such as RFM plot and cohort chart, I use the <a href=\"https://grafana.com/grafana/plugins/volkovlabs-echarts-panel/\" target=\"_blank\">Business Charts</a> plugin powered by the <a href=\"https://echarts.apache.org/en/index.html\" target=\"_blank\">Apache ECharts</a> library.\nThe outcome of building an interactive dashboard is faster and more efficient business decision-making. The workload of creating reports is reduced, as stakeholders can access the interactive dashboards in real-time, which allows me to focus on ad-hoc or one-time analyses.\nI built a Grafana sample dashboard using randomly generated data (based on real data). I hosted it using <a href=\"https://aws.amazon.com\" target=\"_blank\">Amazon Web Services</a> EC2 + RDS. You can access the dashboard via <a href=\"http://3.26.185.45:3000/\" target=\"_blank\">this link</a> and account: <b>username: sample-viewer</b> and <b>password: sample-viewer-pass</b>",
             "tools": ["Grafana", "MySQL", "JavaScript", "AWS"],
             "skills": [
                 "Data Visualization",
@@ -89,7 +89,7 @@
             "external_link": [
                 {
                     "name": "Grafana Sample Dashboard",
-                    "url": "http://54.252.57.201:3000/"
+                    "url": "http://3.26.185.45:3000/"
                 }
             ]
         },
@@ -103,7 +103,7 @@
         },
         {
             "name": "Customer Segmentation",
-            "description": "I performed customer segmentation based on recency and frequency to enhance retention strategies for Funnelink's clients. I do two types of customer segmentation: the first uses recency percentiles, and the other uses interarrival times between purchases. I visualize the customer segment using recency and frequency plots in <a href=\"http://54.252.57.201:3000/\" target=\"_blank\">Grafana</a>. Use this account to access the dashboard: <b>username: sample-viewer</b> and <b>password: sample-viewer-pass</b>.",
+            "description": "I performed customer segmentation based on recency and frequency to enhance retention strategies for Funnelink's clients. I do two types of customer segmentation: the first uses recency percentiles, and the other uses interarrival times between purchases. I visualize the customer segment using recency and frequency plots in <a href=\"http://3.26.185.45:3000/\" target=\"_blank\">Grafana</a>. Use this account to access the dashboard: <b>username: sample-viewer</b> and <b>password: sample-viewer-pass</b>.",
             "tools": ["Python", "MySQL"],
             "skills": ["Programming", "Analytics", "Data Query"],
             "project_at": ["Funnelink"],
@@ -114,7 +114,7 @@
             "external_link": [
                 {
                     "name": "Grafana Sample Dashboard",
-                    "url": "http://54.252.57.201:3000/"
+                    "url": "http://3.26.185.45:3000/"
                 }
             ]
         },
