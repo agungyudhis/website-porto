@@ -1,5 +1,5 @@
 {
-    "homepage": "https://agungyudhis.github.io/website-porto",
+    "homepage": "http://agungyudhis.github.io/website-porto",
     "name": "github-portfolio",
     "private": true,
     "version": "0.0.0",
@@ -7,7 +7,7 @@
     "scripts": {
         "dev": "vite",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
+        "deploy": "touch ./dist/.nojekyll && gh-pages -d dist -t true",
         "build": "vite build",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview"
