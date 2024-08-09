@@ -299,13 +299,11 @@ h3 {
 }
 
 .skill-chart-container {
-    height: 500px;
-    display: grid;
-    gap: var(--level-1-gap);
-    grid-template-columns: 3fr 1fr;
+    height: auto;
 }
 
 .echarts-for-react {
+    height: 500px;
     background-color: var(--clr-card);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);

@@ -221,12 +221,7 @@
             ],
             "project_at": ["Academic Project"],
             "images": [],
-            "external_link": [
-                {
-                    "name": "Journal: Eigenspace-based Fuzzy C-Means with Large Language Model BERT for Topic Detection (Under Review)",
-                    "url": "https://www.researchsquare.com/article/rs-3637575/v1"
-                }
-            ]
+            "external_link": null
         },
         {
             "name": "Comparative Analysis of CNN and LSTM Models for Clickbait Detection",
@@ -321,7 +316,4 @@
             "award_at": "Organization Project",
             "date": "2020-08-07",
             "image": "",
-            "external_link": "https://www.instagram.com/p/CDlX0J2s1ud/?img_index=2"
-        }
-    ]
-}
+            "external_link": "https://www.instagra

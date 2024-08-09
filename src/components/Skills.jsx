@@ -127,18 +127,6 @@ export default function Skills({ refProp }) {
                         </div>
                     </div>
                     <div className="skill-chart-container">
-                        <ReactECharts
-                            option={generateChart(
-                                itemsArray.filter((value) => !value.filtered)
-                            )}
-                            style={{
-                                height: "auto",
-                                width: "100%",
-                                padding: "0",
-                                margin: "0",
-                                position: "relative",
-                            }}
-                        ></ReactECharts>
                         <div className="description-card">
                             <div className="description-header">
                                 <h3>
@@ -158,6 +146,16 @@ export default function Skills({ refProp }) {
                                 </p>
                             </div>
                         </div>
+                        <ReactECharts
+                            option={generateChart(
+                                itemsArray.filter((value) => !value.filtered)
+                            )}
+                            style={{
+                                height: "500px",
+                                width: "100%",
+                                position: "relative",
+                            }}
+                        ></ReactECharts>
                     </div>
                     <div className="skill-filter-container">
                         <div className="skill-header">
