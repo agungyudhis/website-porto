@@ -1,7 +1,7 @@
 {
     "title": "Data Analyst",
     "subtitle": "Hello! I'm Yudhistira Jinawi Agung.",
-    "intro": "<b>Data Analyst</b> with 1.5+ years experience. Part-time worker at <b class=\"tooltip\"><u>FunneLink</u><span class=\"tooltip-text\">A company that focuses on helping optimize online marketing and customer relationship management for UMKM (Usaha Mikro Kecil dan Menengah).</span></b>. Former Data Scientist intern at <b class=\"tooltip\"><u>VOCASIA</u><span class=\"tooltip-text\">Vocasia.id is an online educational marketplace & learning management system platform to share structured expertise and knowledge, and can be used widely for both individuals and communities at an affordable price.</span></b>. Experienced in Data Pipeline, Data Visualization, and Machine Learning (NLP).",
+    "intro": "<b>Data Analyst</b> with 2+ years experience. Part-time worker at <b class=\"tooltip\"><u>FunneLink</u><span class=\"tooltip-text\">A company that focuses on helping optimize online marketing and customer relationship management for UMKM (Usaha Mikro Kecil dan Menengah).</span></b>. Former Data Scientist intern at <b class=\"tooltip\"><u>VOCASIA</u><span class=\"tooltip-text\">Vocasia.id is an online educational marketplace & learning management system platform to share structured expertise and knowledge, and can be used widely for both individuals and communities at an affordable price.</span></b>. Experienced in Data Pipeline, Data Visualization, and Machine Learning (NLP).",
     "contacts": {
         "email": "mailto:yudhistira.jinawi@sci.ui.ac.id",
         "linkedin": "https://www.linkedin.com/in/agungyudhis/",
@@ -14,10 +14,10 @@
             "company": "FunneLink",
             "tasks": [
                 "Assisted clients with total daily revenue of up to 100 million rupiahs through data-driven insights",
-                "Developed and maintained data warehouses for 3-4 clients using MySQL and Google Sheets",
-                "Developed and maintained data pipelines using Python and Cron for scheduling",
+                "Developed and maintained data warehouses for 3-4 clients using MySQL",
+                "Developed and maintained data pipelines using Python and Apache Airflow as an orchestrator",
                 "Designed and implemented an interactive dashboard using Looker Studio or Grafana for each client",
-                "Created custom charts using Apache Echarts on Grafana",
+                "Designed and implemented dimensional modelling for data warehouses",
                 "Collected external data using Selenium and Python",
                 "Performed customer segmentation based on recency and frequency to enhance retention strategies",
                 "Conducted sentiment analysis and topic clustering on Google Maps review data"
@@ -48,6 +48,35 @@
     ],
     "projects": [
         {
+            "name": "ELT Pipelines & Dimensional Data Warehouse",
+            "description": " In many companies and organizations, data is scattered across multiple sources, making it difficult for data analysts, business analysts, and data scientists to extract insights efficiently. To solve this challenge, I built data pipelines and data warehouse to streamline data processing and improve accessibility. I use Apache Airflow for workflow orchestrator, MinIO as object storage, PostgreSQL as data warehouse, and Power BI as interactive dashboard. I implemented dimensional modeling (Kimball) to designing data warehouse. \nProject presentation pdf: <a href=\"https://www.linkedin.com/posts/agungyudhis_building-data-pipelines-data-warehouse-activity-7294535007811813377-feaq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChI4aIBB62prydWRuRLhSacnpfPjdNbzFo\" target=\"_blank\">LinkedIn Post</a>\nProject repository: <a href=\"https://github.com/agungyudhis/sales-pipeline-project\" target=\"_blank\">sales-pipeline-project</a>",
+            "tools": ["PostgreSQL", "Python", "Apache Airflow", "MinIO", "Power BI", "Docker"],
+            "skills": [
+                "Data Pipeline",
+                "Database",
+                "Data Warehousing",
+                "Programming",
+                "Data Query",
+                "Data Visualization"
+            ],
+            "project_at": ["Personal Project"],
+            "images": [
+                "elt-pipeline-1.png",
+                "elt-pipeline-2.png",
+                "elt-pipeline-3.png"
+            ],
+            "external_link": [
+                {
+                    "name": "LinkedIn Post",
+                    "url": "https://www.linkedin.com/posts/agungyudhis_building-data-pipelines-data-warehouse-activity-7294535007811813377-feaq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAChI4aIBB62prydWRuRLhSacnpfPjdNbzFo"
+                },
+                {
+                    "name": "GitHub Repository",
+                    "url": "https://github.com/agungyudhis/sales-pipeline-project"
+                }
+            ]
+        },
+        {
             "name": "Data Pipeline and Data Warehouse",
             "description": "Communicate with Funnelink's clients' data teams to understand their data. Create data <a href=\"https://aws.amazon.com/what-is/etl/#:~:text=Extract%2C%20transform%2C%20and%20load%20(,and%20machine%20learning%20(ML).\" target=\"_blank\">ETL</a> from various sources, including spreadsheets and <a href=\"https://www.mysql.com/\" target=\"_blank\">MySQL</a>.\nI was first introduced to data pipelines during my internship at Vocasia. The main objective of establishing the data pipeline was to process and transfer data from MySQL to the data warehouse, which used <a href=\"https://workspace.google.com/intl/en_id/products/sheets/\" target=\"_blank\">Google Sheets</a>, utilizing the <a href=\"https://developers.google.com/sheets/api/guides/concepts\" target=\"_blank\">Google Sheets API</a>. At that time, the data pipeline process used Python, running locally. The Python script is still executed manually every day. Then, I took the initiative to use the Windows Task Scheduler to run the script automatically.\nWhen I worked at FunneLink, the data pipeline process was run on a cloud server. Therefore, I replaced the Windows Task Scheduler with <a href=\"https://en.wikipedia.org/wiki/Cron\" target=\"_blank\">Cron</a>. The client's data grew quickly, and the Google Sheets became slow, so I started using MySQL as a data warehouse.",
             "tools": ["MySQL", "Python", "Google API", "Spreadsheets", "Cron"],
@@ -76,7 +105,7 @@
         },
         {
             "name": "Grafana Dashboards",
-            "description": "I built and maintained interactive and easy-to-use <a href=\"https://grafana.com/\" target=\"_blank\">Grafana</a> dashboards for FunneLink's clients. The dashboard is used to help stakeholders determine data-driven business strategies. There are generally three main pages: sales by period, customers, and sales by location. Sales by period: Describe how the sales have performed over time. The customer page describes purchasing behavior, such as how often customers buy products on average. Sales by location describe the top province and city by revenue or profit.\nTo build interactive Grafana dashboards, I begin by identifying client or stakeholder needs. Next, I check the available data source. Then, I prepare queries for charts and configure the charts. For interactivity, I added filters using built-in variables or <a href=\"https://grafana.com/grafana/plugins/volkovlabs-variable-panel/\" target=\"_blank\">Business Variable</a>. For specific charts that are not possible to build using a built-in chart, such as RFM plot and cohort chart, I use the <a href=\"https://grafana.com/grafana/plugins/volkovlabs-echarts-panel/\" target=\"_blank\">Business Charts</a> plugin powered by the <a href=\"https://echarts.apache.org/en/index.html\" target=\"_blank\">Apache ECharts</a> library.\nThe outcome of building an interactive dashboard is faster and more efficient business decision-making. The workload of creating reports is reduced, as stakeholders can access the interactive dashboards in real-time, which allows me to focus on ad-hoc or one-time analyses.\nI built a Grafana sample dashboard using randomly generated data (based on real data). I hosted it using <a href=\"https://aws.amazon.com\" target=\"_blank\">Amazon Web Services</a> EC2 + RDS. You can access the dashboard via <a href=\"http://3.26.185.45:3000/\" target=\"_blank\">this link</a> and account: <b>username: sample-viewer</b> and <b>password: sample-viewer-pass</b>",
+            "description": "I built and maintained interactive and easy-to-use <a href=\"https://grafana.com/\" target=\"_blank\">Grafana</a> dashboards for FunneLink's clients. The dashboard is used to help stakeholders determine data-driven business strategies. There are generally three main pages: sales by period, customers, and sales by location. Sales by period: Describe how the sales have performed over time. The customer page describes purchasing behavior, such as how often customers buy products on average. Sales by location describe the top province and city by revenue or profit.\nTo build interactive Grafana dashboards, I begin by identifying client or stakeholder needs. Next, I check the available data source. Then, I prepare queries for charts and configure the charts. For interactivity, I added filters using built-in variables or <a href=\"https://grafana.com/grafana/plugins/volkovlabs-variable-panel/\" target=\"_blank\">Business Variable</a>. For specific charts that are not possible to build using a built-in chart, such as RFM plot and cohort chart, I use the <a href=\"https://grafana.com/grafana/plugins/volkovlabs-echarts-panel/\" target=\"_blank\">Business Charts</a> plugin powered by the <a href=\"https://echarts.apache.org/en/index.html\" target=\"_blank\">Apache ECharts</a> library.\nThe outcome of building an interactive dashboard is faster and more efficient business decision-making. The workload of creating reports is reduced, as stakeholders can access the interactive dashboards in real-time, which allows me to focus on ad-hoc or one-time analyses.\nI built a Grafana sample dashboard using randomly generated data (based on real data). I hosted it using <a href=\"https://aws.amazon.com\" target=\"_blank\">Amazon Web Services</a> EC2 + RDS.",
             "tools": ["Grafana", "MySQL", "JavaScript", "AWS"],
             "skills": [
                 "Data Visualization",
@@ -85,13 +114,7 @@
                 "Data Query"
             ],
             "project_at": ["Funnelink", "Personal Project"],
-            "images": ["grafana-dashboard-1.png", "grafana-dashboard-2.png"],
-            "external_link": [
-                {
-                    "name": "Grafana Sample Dashboard",
-                    "url": "http://3.26.185.45:3000/"
-                }
-            ]
+            "images": ["grafana-dashboard-1.png", "grafana-dashboard-2.png"]
         },
         {
             "name": "Website Scraping",
@@ -103,19 +126,13 @@
         },
         {
             "name": "Customer Segmentation",
-            "description": "I performed customer segmentation based on recency and frequency to enhance retention strategies for Funnelink's clients. I do two types of customer segmentation: the first uses recency percentiles, and the other uses interarrival times between purchases. I visualize the customer segment using recency and frequency plots in <a href=\"http://3.26.185.45:3000/\" target=\"_blank\">Grafana</a>. Use this account to access the dashboard: <b>username: sample-viewer</b> and <b>password: sample-viewer-pass</b>.",
+            "description": "I performed customer segmentation based on recency and frequency to enhance retention strategies for Funnelink's clients. I do two types of customer segmentation: the first uses recency percentiles, and the other uses interarrival times between purchases. I visualize the customer segment using recency and frequency plots in Grafana.",
             "tools": ["Python", "MySQL"],
             "skills": ["Programming", "Analytics", "Data Query"],
             "project_at": ["Funnelink"],
             "images": [
                 "customer-segmentation-1.png",
                 "customer-segmentation-2.png"
-            ],
-            "external_link": [
-                {
-                    "name": "Grafana Sample Dashboard",
-                    "url": "http://3.26.185.45:3000/"
-                }
             ]
         },
         {
@@ -240,7 +257,7 @@
             ],
             "external_link": [
                 {
-                    "name": "Github Repository",
+                    "name": "GitHub Repository",
                     "url": "https://github.com/agungyudhis/headline-clickbait-detection-id/tree/main"
                 }
             ]
@@ -316,4 +333,7 @@
             "award_at": "Organization Project",
             "date": "2020-08-07",
             "image": "",
-            "external_link": "https://www.instagra
+            "external_link": "https://www.instagram.com/p/CDlX0J2s1ud/?img_index=2"
+        }
+    ]
+}
