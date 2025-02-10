@@ -18,5 +18,9 @@
     { "color": "#ffee51", "textColor": "var(--clr-dark)" },
     { "color": "#8c6ac4", "textColor": "var(--clr-light)" },
     { "color": "#715c87", "textColor": "var(--clr-light)" },
-    { "color": "#9bca63", "textColor": "var(--clr-dark)" }
+    { "color": "#ddeb9d", "textColor": "var(--clr-dark)" },
+    { "color": "#ffcfef", "textColor": "var(--clr-dark)" },
+    { "color": "#143d60", "textColor": "var(--clr-light)" },
+    { "color": "#006a67", "textColor": "var(--clr-light)" },
+    { "color": "#b9e5e8", "textColor": "var(--clr-dark)" }
 ]
