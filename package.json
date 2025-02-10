@@ -7,7 +7,7 @@
     "scripts": {
         "dev": "vite",
         "predeploy": "npm run build",
-        "deploy": "touch ./dist/.nojekyll && gh-pages -d dist -t true",
+        "deploy": "touch ./dist/.nojekyll && ./node_modules/gh-pages/bin/gh-pages-clean.js && gh-pages -d build",
         "build": "vite build",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview"
